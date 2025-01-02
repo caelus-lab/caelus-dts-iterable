@@ -1,0 +1,30 @@
+{
+  "name": "iterable-collections",
+  "version": "1.0.0",
+  "description": "A TypeScript library for iterable collections with abstract classes.",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "compile": "tsc -b dts/linked-list/node_modules/iterable-collections/tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "build:clean": "powershell.exe -ExecutionPolicy Bypass -File ../../Conf-Tem/clean.ps1",
+    "build": "npm run compile && node ../../Conf-Tem/builder.js"
+  },
+  "keywords": [
+    "iterable",
+    "collections"
+  ],
+  "author": "Caelus",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  }
+}
