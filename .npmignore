@@ -6,6 +6,7 @@ devDependencies/
 __tests__/
 *.spec.ts
 # Local configuration
+vite.config.ts
 .eslintrc
 .prettierrc
 *.env
@@ -37,7 +38,9 @@ TEST*.xml
 Thumbs.db
 .DS_Store
 # Dev
-*.ts
+index.ts
 src/
 source/
 main/
+#Json
+tsconfig.json

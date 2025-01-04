@@ -1,6 +1,6 @@
 {
   "name": "@caelus-dts/iterable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript library for iterable collections with abstract classes.",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
