@@ -1,3 +1,9 @@
+/**
+ * Abstract class representing a generic iterable entry structure with key-value pairs.
+ *
+ * @template K The type of keys maintained by this structure.
+ * @template V The type of values stored in this structure.
+ */
 export abstract class IterableEntry<K, V> {
     public abstract get size(): number;
 
@@ -21,6 +27,11 @@ export abstract class IterableEntry<K, V> {
     }
 }
 
+/**
+ * Represents an abstract base class for iterable container-like structures.
+ *
+ * @template T The type of elements contained in the iterable structure.
+ */
 export abstract class IterableElement<T> {
     public abstract get size(): number;
 
